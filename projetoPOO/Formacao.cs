@@ -19,9 +19,18 @@ public class Formacao
 
 public Formacao(string tipoForm, string dataFimForm,  string nomeForm, TimeOnly duracaoForm, string areaForm, string instituicaoForm, TimeOnly cargaHorariaForm)
 {
-    this
+    this.Tipo = tipoForm;
+    this.DataFim = dataFimForm;
+    this.NomeF = nomeForm;
+    this.Duracao = duracaoForm;
+    this.Area = areaForm;
+    this.Instituicao = instituicaoForm;
+    this.CargaHoraria = cargaHorariaForm;
 }
 
-
+//public double CalcularCusto(double custoMensal)
+//{
+    
+//}
 
 }

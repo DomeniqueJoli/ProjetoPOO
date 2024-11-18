@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\domen\\OneDrive\\Documentos\\Facul\\POO\\projetoPOO\\projetoPOO.csproj": {}
+    "C:\\Users\\domen\\OneDrive\\Documentos\\GitHub\\ProjetoPOO\\projetoPOO\\projetoPOO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\domen\\OneDrive\\Documentos\\Facul\\POO\\projetoPOO\\projetoPOO.csproj": {
+    "C:\\Users\\domen\\OneDrive\\Documentos\\GitHub\\ProjetoPOO\\projetoPOO\\projetoPOO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\domen\\OneDrive\\Documentos\\Facul\\POO\\projetoPOO\\projetoPOO.csproj",
+        "projectUniqueName": "C:\\Users\\domen\\OneDrive\\Documentos\\GitHub\\ProjetoPOO\\projetoPOO\\projetoPOO.csproj",
         "projectName": "projetoPOO",
-        "projectPath": "C:\\Users\\domen\\OneDrive\\Documentos\\Facul\\POO\\projetoPOO\\projetoPOO.csproj",
+        "projectPath": "C:\\Users\\domen\\OneDrive\\Documentos\\GitHub\\ProjetoPOO\\projetoPOO\\projetoPOO.csproj",
         "packagesPath": "C:\\Users\\domen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\domen\\OneDrive\\Documentos\\Facul\\POO\\projetoPOO\\obj\\",
+        "outputPath": "C:\\Users\\domen\\OneDrive\\Documentos\\GitHub\\ProjetoPOO\\projetoPOO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\domen\\AppData\\Roaming\\NuGet\\NuGet.Config",
