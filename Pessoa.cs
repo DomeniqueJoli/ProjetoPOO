@@ -1,59 +1,119 @@
 public class Pessoa{
 
-    public string Nome { get; set; }
-    public string Sobrenome { get; set; }
-    public int anoNasc { get; set; }
-    public string CPF { get; set; }
-    public string Email { get; set; }
-    public string Endereco { get; set; }
-    public string Telefone { get; set; }
+    private string nome ;
+    private string sexo ;
+    private int anoNasc ;
+    private string cpf ;
+    private string email;
+    private string telefoneSecun ;
+    private string endereco; 
+    private string telefone ;
+    private string emailSecun;
+    private int idade;
 
-    public void ExibirInformacoes()
+     public string Nome
     {
-        Console.WriteLine("\n--- Informações da Pessoa ---");
-        Console.WriteLine($"DataNasc: {Idade}");
-        Console.WriteLine($"CPF: {CPF}");
-        Console.WriteLine($"Email: {Email}");
-        Console.WriteLine($"Endereço: {Endereco}");
-        Console.WriteLine($"Telefone: {Telefone}");
+        get { return nome; }
+        set { nome = value; }
     }
 
-    // public int CalcularIdade()
-    // {
-    //     int idade = DateTime.Now.Year - DataNascimento.Year;
-    //     if (DateTime.Now.DayOfYear < DataNascimento.DayOfYear)
-    //         idade--;
-    //     return idade;
-    // }
+    public int AnoNasc
+    {
+        get { return anoNasc; }
+        set { anoNasc = value; }
+    }
+
+    public string Sexo
+    {
+        get { return sexo; }
+        set { sexo = value; }
+    }
+
+    public string Endereco
+    {
+        get { return endereco; }
+        set { endereco = value; }
+    }
+
+    public string Telefone
+    {
+        get { return telefone; }
+        set { telefone = value; }
+    }
+
+    public string Email
+    {
+        get { return email; }
+        set { email = value; }
+    }
+
+    public string Cpf
+    {
+        get { return cpf; }
+        set { cpf = value; }
+    }
+
+    public string TelefoneSecun
+    {
+        get { return telefoneSecun; }
+        set { telefoneSecun = value; }
+    }
+
+    public string EmailSecun
+    {
+        get { return emailSecun; }
+        set { emailSecun = value; }
+    }
+    public int Idade
+    {
+        get { return idade; }
+        set { idade = value; }
+    }
 
     public int CalcularIdade(){
         int anoAtual = DateTime.Now.Year;
-        return anoAtual - anoNasc;
+        Idade = anoAtual - AnoNasc;
+        Console.WriteLine(Idade);
+        return anoAtual - AnoNasc;
         
     }
 
-    public void TelefoneSecundario(int telSecun){
+    public void TelefoneSecundario(){
         Console.WriteLine("Digite seu número de telefone secundário: ");
-        telSecun = int.Parse(Console.ReadLine());
+        TelefoneSecun = Console.ReadLine();
     }
 
     public string ValidarEmail()
     {
-        //string email;
-        Console.WriteLine("Email: ");
-        Email = Console.ReadLine();
         if(Email.Contains("@") && Email.Contains(".")){
-            return "está certo";
+            Console.WriteLine("Email Valido");
+            return "valido";
         }
         else{
-            return "Errado";
+            Console.WriteLine("Email Invalido");
+            return "Invalido";
         }
     }
 
-    public void EmailSecundario(string emailSegun)
+    public string EmailSecundario()
     {
-        Console.WriteLine("Digite seu número de telefone secundário: ");
-        emailSecun = Console.ReadLine();
+        Console.WriteLine("Digite seu Email secundário: ");
+        EmailSecun = Console.ReadLine();
+        return EmailSecun;
     }
+
+    public string ValidarCPF()
+    {
+        string cpfNum = Cpf.Replace(".", "").Replace("-", "");
+        if(cpfNum.Length == 11){
+            Console.WriteLine("Cpf Valido!");
+            return "Cpf valido";
+        }
+        else{
+            Console.WriteLine("Cpf Invalido!!");
+            return "Cpf Invalido";
+        }
+    }
+
 
 }
