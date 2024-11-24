@@ -3,5 +3,5 @@ public class Alunos{
     private int CartaoSus {get; set; }
     private string responsavel {get; set; }
 
-    
+
 }
