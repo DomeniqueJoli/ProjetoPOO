@@ -1,0 +1,15 @@
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\projetoPOO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\projetoPOO.AssemblyInfoInputs.cache
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\projetoPOO.AssemblyInfo.cs
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\projetoPOO.csproj.CoreCompileInputs.cache
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\projetoPOO.sourcelink.json
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\bin\Debug\net8.0\projetoPOO.exe
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\bin\Debug\net8.0\projetoPOO.deps.json
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\bin\Debug\net8.0\projetoPOO.runtimeconfig.json
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\bin\Debug\net8.0\projetoPOO.dll
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\bin\Debug\net8.0\projetoPOO.pdb
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\projetoPOO.dll
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\refint\projetoPOO.dll
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\projetoPOO.pdb
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\projetoPOO.genruntimeconfig.cache
+C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\ref\projetoPOO.dll
