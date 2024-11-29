@@ -115,9 +115,9 @@ public void VerificarAprovacao()
 
     if(md < 60)
     {
-        System.Console.WriteLine("Reprovado");
+        Console.WriteLine("Reprovado");
     }else{
-        System.Console.WriteLine("Aprovado");
+        Console.WriteLine("Aprovado");
     }
 }
 
@@ -130,7 +130,7 @@ public void AreaDeEstudo()
 
 public void AtualizarNomeFormacao()
 {
-    System.Console.WriteLine("Digite o novo nome da atual formação");
+    Console.WriteLine("Digite o novo nome da atual formação");
     string novoNome = Console.ReadLine();
     NomeF = novoNome;
 }

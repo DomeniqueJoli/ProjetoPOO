@@ -112,14 +112,14 @@ public void ExibirInfo()
 
 public void AlterarSala()
 {
-    System.Console.WriteLine("Digite o novo número da sala: ");
+    Console.WriteLine("Digite o novo número da sala: ");
     int novaSala = int.Parse(Console.ReadLine());
     Sala = novaSala;
 }
 
 public void SalaVazia()
 {
-    System.Console.WriteLine("Digite o número da sala: ");
+    Console.WriteLine("Digite o número da sala: ");
     int sala = int.Parse(Console.ReadLine());
 
     Random random = new Random();
@@ -127,25 +127,25 @@ public void SalaVazia()
 
     if (chute % 2 == 0)
     {
-        System.Console.WriteLine("Sala vazia");
+        Console.WriteLine("Sala vazia");
     }else
     {
-        System.Console.WriteLine("Sala ocupada");
+        Console.WriteLine("Sala ocupada");
     }
 
 }
 
 public void CalcularHorasExtrasFaltando()
 {
-    System.Console.WriteLine("Digite quantas horas extras você tem atualmente");
+    Console.WriteLine("Digite quantas horas extras você tem atualmente");
     int tem = int.Parse(Console.ReadLine());
     int faltante = HorasEx - tem;
-    System.Console.WriteLine("Falta um total de " +faltante+ " para a turma ao todo");
+    Console.WriteLine("Falta um total de " +faltante+ " para a turma ao todo");
 }
 
 public void AtualizarPeriodoTurma()
 {
-    System.Console.WriteLine("Digite o periodo atual da sala: ");
+    Console.WriteLine("Digite o periodo atual da sala: ");
     int novoPeriodo = int.Parse(Console.ReadLine());
     Periodo = novoPeriodo;
     Console.WriteLine($"O período da turma {NomeT} foi alterado para: {Periodo}");
