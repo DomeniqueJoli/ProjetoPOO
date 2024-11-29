@@ -56,9 +56,91 @@ if (clas != 0)
 
     }
 
+    
     if(clas == 2)
     {
-        
+        Funcionario funcionario = new Funcionario();
+        Console.WriteLine("Digite o nome do funcionario: ");
+        funcionario.Nome = Console.ReadLine();
+
+        Console.WriteLine("Digite a matricula do funcionario: ");
+        funcionario.Matricula = Console.ReadLine();
+
+        Console.WriteLine("\nDigite o Sexo do funcionario: ");
+        funcionario.Sexo = Console.ReadLine();
+
+        Console.WriteLine("Digite o departamento do funcionario: ");
+        funcionario.Departamento = Console.ReadLine();
+
+        Console.WriteLine("Digite o nome do supervisor do funcionario: ");
+        funcionario.Supervisor = Console.ReadLine();
+
+        Console.WriteLine("\nDigite o ano de nascimento do funcionario: ");
+        funcionario.AnoNasc = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite o salário do funcionario: ");
+        funcionario.Salario = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("\nDigite o CPF do funcionario:");
+        funcionario.Cpf = Console.ReadLine();
+        funcionario.ValidarCPF();
+
+        Console.WriteLine("\nDigite o E-mail do funcionario: ");
+        funcionario.Email = Console.ReadLine();
+
+        Console.WriteLine($"\nVerificação de Email: {funcionario.ValidarEmail()}");
+
+        Console.WriteLine("\nDigite o Endereço do funcionario: ");
+        funcionario.Endereco = Console.ReadLine();
+
+        Console.WriteLine("\nDigite o número de telefone do funcionario: ");
+        funcionario.Telefone = Console.ReadLine();
+
+        Console.WriteLine("\nDeseja Cadastrar um Telefone Segundário? (Responda com s ou n)");
+        string res = Console.ReadLine();
+        if(res == "s"){
+            funcionario.TelefoneSecundario();
+        }
+
+        Console.WriteLine("\nDeseja Cadastrar um E-mail Segundário? (Responda com s ou n)");
+        string resp = Console.ReadLine();
+        if(resp == "s"){
+            funcionario.EmailSecundario();
+        }
+
+        Console.WriteLine("A idade do funcionario é: ");
+        funcionario.CalcularIdade(); 
+
+        Console.WriteLine("Digite o número de qual informação você deseja acessar: ");
+        Console.WriteLine("0 - Sair do programa");
+        Console.WriteLine("1 - Informações disponíveis do funcinário");
+        Console.WriteLine("2 - Calcular o salário anual do funcionário");
+        Console.WriteLine("3 - Promover o funcionário");
+        int op = int.Parse(Console.ReadLine());
+
+        switch(op) 
+        {
+            case 0:
+            break;
+
+            case 1: 
+            funcionario.ExibirInformacoesFuncionario();
+            break;
+
+            case 2:
+            funcionario.CalcularSalarioAnual();
+            break;
+
+            case 3:
+            System.Console.WriteLine("Digite o novo departamento do funcionário:");
+            string nd = Console.ReadLine();
+            System.Console.WriteLine("Digite o novo salário do funcionário:");
+            double ns = double.Parse(Console.ReadLine());
+            funcionario.Promocao(ns, nd);
+            break;
+
+        }
+
     }
 
     if(clas == 3)
