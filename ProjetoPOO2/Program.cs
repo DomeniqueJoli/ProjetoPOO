@@ -65,27 +65,80 @@ aluno.Aprovacao();
 aluno.ExibirInformacoesAluno();
 
 // Turma  ////////////////////////////////////////////////////////////////////////////////
-Turma turmaA = new Turma("Ada", 23, 60, 5, "Romário", 3, 100);
-turmaA.ExibirInfo();
-turmaA.AlterarSala();
-turmaA.SalaVazia();
-turmaA.CalcularHorasExtrasFaltando();
-turmaA.AtualizarPeriodoTurma();
+Console.WriteLine("Digite o nome da turma: ");
+string nometA = Console.ReadLine();
+
+Console.WriteLine("Digite a quantidade de alunos da turma: ");
+int quant_Al_a = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Digite o número da sala da turma: ");
+int num_sala = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Digite a quantidade de professores da turma: ");
+int quant_Al_p = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Digite o nome do orientados da turma: ");
+string nometOrient = Console.ReadLine();
+
+Console.WriteLine("Digite o período da turma: ");
+int periodoA = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Digite a quantidade de horas extras da turma: ");
+int horasEx = int.Parse(Console.ReadLine());
+
+Turma turmaA = new Turma(nometA, quant_Al_a, num_sala, quant_Al_p, nometOrient, periodoA, horasEx);
+
+System.Console.WriteLine("Digite o número de qual informação você deseja acessar: ");
+System.Console.WriteLine("0 - Sair do programa");
+System.Console.WriteLine("1 - Informações disponíveis da turma");
+System.Console.WriteLine("2 - Alterar a sala da turma");
+System.Console.WriteLine("3 - Verificar se a sala da turma está vazia");
+System.Console.WriteLine("4 - Realizar o calculo de horas extrasrestantes necessárias");
+System.Console.WriteLine("5 - Atualizar o período em que a turma se encontra");
+int op = int.Parse(Console.ReadLine());
+
+switch(op) 
+{
+    case 0:
+    break;
+
+    case 1: 
+    turmaA.ExibirInfo();
+    break;
+
+    case 2:
+    turmaA.AlterarSala();
+    break;
+
+    case 3:
+    turmaA.SalaVazia();
+    break;
+
+    case 4:
+    turmaA.CalcularHorasExtrasFaltando();
+    break;
+
+    case 5:
+    turmaA.AtualizarPeriodoTurma();
+    break;
+
+}
+
 
 // Formação  ////////////////////////////////////////////////////////////////////////////////
 Formacao formacao = new Formacao("Bacharelado", "30/12/2027",  "Licenciatura em História", 4, "Ciencias humanas", "UFMG", 1600);
-formacao.ExibirInfo();
-formacao.VerificarAprovacao();
-formacao.AreaDeEstudo();
-formacao.AtualizarNomeFormacao();
-formacao.ObterAnosRestantes();
+//formacao.ExibirInfo();
+//formacao.VerificarAprovacao();
+//formacao.AreaDeEstudo();
+//formacao.AtualizarNomeFormacao();
+//formacao.ObterAnosRestantes();
 
 
 
 // Professor  ////////////////////////////////////////////////////////////////////////////////
 Professor professor = new Professor("manhã", 40, 5000.00, "Ativo", "Português");
-professor.ExibirInfo();
-professor.VerificarStatus();
+//professor.ExibirInfo();
+//professor.VerificarStatus();
 
 
 

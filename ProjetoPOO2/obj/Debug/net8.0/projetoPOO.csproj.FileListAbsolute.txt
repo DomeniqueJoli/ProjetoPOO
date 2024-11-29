@@ -13,3 +13,17 @@ C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8
 C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\projetoPOO.pdb
 C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\projetoPOO.genruntimeconfig.cache
 C:\Users\corto\OneDrive\Área de Trabalho\trabalho-poo\projetoPOO\obj\Debug\net8.0\ref\projetoPOO.dll
+C:\Users\domen\Downloads\ProjetoPOO2\bin\Debug\net8.0\projetoPOO.exe
+C:\Users\domen\Downloads\ProjetoPOO2\bin\Debug\net8.0\projetoPOO.deps.json
+C:\Users\domen\Downloads\ProjetoPOO2\bin\Debug\net8.0\projetoPOO.runtimeconfig.json
+C:\Users\domen\Downloads\ProjetoPOO2\bin\Debug\net8.0\projetoPOO.dll
+C:\Users\domen\Downloads\ProjetoPOO2\bin\Debug\net8.0\projetoPOO.pdb
+C:\Users\domen\Downloads\ProjetoPOO2\obj\Debug\net8.0\projetoPOO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\domen\Downloads\ProjetoPOO2\obj\Debug\net8.0\projetoPOO.AssemblyInfoInputs.cache
+C:\Users\domen\Downloads\ProjetoPOO2\obj\Debug\net8.0\projetoPOO.AssemblyInfo.cs
+C:\Users\domen\Downloads\ProjetoPOO2\obj\Debug\net8.0\projetoPOO.csproj.CoreCompileInputs.cache
+C:\Users\domen\Downloads\ProjetoPOO2\obj\Debug\net8.0\projetoPOO.dll
+C:\Users\domen\Downloads\ProjetoPOO2\obj\Debug\net8.0\refint\projetoPOO.dll
+C:\Users\domen\Downloads\ProjetoPOO2\obj\Debug\net8.0\projetoPOO.pdb
+C:\Users\domen\Downloads\ProjetoPOO2\obj\Debug\net8.0\projetoPOO.genruntimeconfig.cache
+C:\Users\domen\Downloads\ProjetoPOO2\obj\Debug\net8.0\ref\projetoPOO.dll
