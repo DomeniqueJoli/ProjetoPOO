@@ -4,6 +4,7 @@ public class Funcionario : Pessoa
     private string departamento;
     private double salario;
     private string supervisor;
+    private Formacao formacao;
 
     public string Matricula
     {
@@ -28,6 +29,13 @@ public class Funcionario : Pessoa
         get { return supervisor; }
         set { supervisor = value; }
     }
+
+    public Formacao Formacao 
+    { 
+        get { return formacao; } 
+        set { formacao = value; } 
+    }
+
 
     public void CalcularSalarioAnual()
     {
@@ -59,5 +67,6 @@ public class Funcionario : Pessoa
         Console.WriteLine($"Supervisor: {Supervisor}");
         Console.WriteLine($"Email Secundário: {EmailSecun}");
         Console.WriteLine($"Telefone Secundário: {TelefoneSecun}");
+        Formacao = formacao;
     }
 }
