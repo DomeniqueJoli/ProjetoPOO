@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\corto\\OneDrive\\Área de Trabalho\\trabalho-poo-29-11\\ProjetoPOO2\\projetoPOO.csproj": {}
+    "C:\\Users\\domen\\OneDrive\\Documentos\\GitHub\\ProjetoPOO\\ProjetoPOO2\\projetoPOO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\corto\\OneDrive\\Área de Trabalho\\trabalho-poo-29-11\\ProjetoPOO2\\projetoPOO.csproj": {
+    "C:\\Users\\domen\\OneDrive\\Documentos\\GitHub\\ProjetoPOO\\ProjetoPOO2\\projetoPOO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\corto\\OneDrive\\Área de Trabalho\\trabalho-poo-29-11\\ProjetoPOO2\\projetoPOO.csproj",
+        "projectUniqueName": "C:\\Users\\domen\\OneDrive\\Documentos\\GitHub\\ProjetoPOO\\ProjetoPOO2\\projetoPOO.csproj",
         "projectName": "projetoPOO",
-        "projectPath": "C:\\Users\\corto\\OneDrive\\Área de Trabalho\\trabalho-poo-29-11\\ProjetoPOO2\\projetoPOO.csproj",
-        "packagesPath": "C:\\Users\\corto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\corto\\OneDrive\\Área de Trabalho\\trabalho-poo-29-11\\ProjetoPOO2\\obj\\",
+        "projectPath": "C:\\Users\\domen\\OneDrive\\Documentos\\GitHub\\ProjetoPOO\\ProjetoPOO2\\projetoPOO.csproj",
+        "packagesPath": "C:\\Users\\domen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\domen\\OneDrive\\Documentos\\GitHub\\ProjetoPOO\\ProjetoPOO2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\corto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\domen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
