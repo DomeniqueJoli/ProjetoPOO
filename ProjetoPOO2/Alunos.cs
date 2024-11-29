@@ -4,6 +4,7 @@ public class Alunos : Pessoa{
     private string curso; 
     private double notaFinal;
     private string responsavel;
+    private Turma turma;
 
     public string Matricula
     {
@@ -27,6 +28,12 @@ public class Alunos : Pessoa{
     {
         get { return responsavel; }
         set { responsavel = value; }
+    }
+
+    public Turma Turma 
+    { 
+        get { return turma; } 
+        set { turma = value; } 
     }
 
     public void CalcularNotaFinal(double nota1, double nota2, double nota3, double nota4){
@@ -64,6 +71,8 @@ public class Alunos : Pessoa{
         Console.WriteLine($"Responsavel: {Responsavel}");
         Console.WriteLine($"Email Secundario: {EmailSecun}");
         Console.WriteLine($"Telefone Secundario: {TelefoneSecun}");
+        Console.WriteLine("\n--- Informações da Turma ---"); 
+        turma.ExibirInfo();
         
     }
 }

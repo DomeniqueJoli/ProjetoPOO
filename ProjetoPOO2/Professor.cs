@@ -12,6 +12,8 @@ public class Professor
 
     private string Disciplina;
 
+    private Formacao formacao;
+
     public string GetTurno()
     {
         return Turno;
@@ -61,6 +63,12 @@ public class Professor
     {
         Disciplina = value;
     }
+
+    public Formacao Formacao 
+    { 
+        get { return formacao; } 
+        set { formacao = value; } 
+    }
   
 public Professor(string turnoProf, int cargaHorariaProf, double salarioProf, string statusProf, string disciplinaProf)
 {
@@ -78,6 +86,8 @@ public void ExibirInfo()
     Console.WriteLine($"Média de carga horária: {CargaHoraria}");
     Console.WriteLine($"Salário: {Salario}");
     Console.WriteLine($"Disciplina: {Disciplina}");
+    Console.WriteLine("\n--- Informações da Formação ---"); 
+    formacao.ExibirInfo();
  
 }
 

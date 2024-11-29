@@ -108,7 +108,31 @@ if (clas != 0)
             funcionario.EmailSecundario();
         }
 
-        Console.WriteLine("A idade do funcionario é: ");
+        Console.WriteLine("\nDigite o tipo da formação: ");
+        string tipoForm = Console.ReadLine();
+
+        Console.WriteLine("\nDigite a data em que a formação se encerrou: ");
+        string dataFimForm = Console.ReadLine();
+
+        Console.WriteLine("\nDigite o nome da formação: ");
+        string nomeForm = Console.ReadLine();
+
+        Console.WriteLine("\nDigite a duração da formação em anos: ");
+        int duracaoForm = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("\nDigite o nome da área de formação: ");
+        string areaForm = Console.ReadLine();
+
+        Console.WriteLine("\nDigite a instituição em que a formação foi realizada: ");
+        string instituicaoForm = Console.ReadLine();
+
+        Console.WriteLine("\nDigite a carga horária total da formação: ");
+        int cargaHorariaForm = int.Parse(Console.ReadLine());
+
+        Formacao formacao = new Formacao(tipoForm, dataFimForm, nomeForm, duracaoForm, areaForm, instituicaoForm, cargaHorariaForm);
+
+
+        Console.WriteLine("\nA idade do funcionario é: ");
         funcionario.CalcularIdade(); 
 
         Console.WriteLine("Digite o número de qual informação você deseja acessar: ");
@@ -145,20 +169,43 @@ if (clas != 0)
 
     if(clas == 3)
     {
-        Console.WriteLine("Digite o turno do professor: ");
+        Console.WriteLine("\nDigite o turno do professor: ");
         string turnoProf = Console.ReadLine();
 
-        Console.WriteLine("Digite a carga horária do professor: ");
+        Console.WriteLine("\nDigite a carga horária do professor: ");
         int cargaHoraria = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Digite o salário do professor: ");
+        Console.WriteLine("\nDigite o salário do professor: ");
         double salarioprof = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Digite o status do professor: ");
+        Console.WriteLine("\nDigite o status do professor: ");
         string statusProf = Console.ReadLine();
 
-        Console.WriteLine("Digite o nome da disciplina dada pelo porfessor: ");
+        Console.WriteLine("\nDigite o nome da disciplina dada pelo porfessor: ");
         string disciplinaProf = Console.ReadLine();
+
+        Console.WriteLine("Digite o tipo da formação: ");
+        string tipoForm = Console.ReadLine();
+
+        Console.WriteLine("Digite a data em que a formação se encerrou: ");
+        string dataFimForm = Console.ReadLine();
+
+        Console.WriteLine("Digite o nome da formação: ");
+        string nomeForm = Console.ReadLine();
+
+        Console.WriteLine("Digite a duração da formação em anos: ");
+        int duracaoForm = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite o nome da área de formação: ");
+        string areaForm = Console.ReadLine();
+
+        Console.WriteLine("Digite a instituição em que a formação foi realizada: ");
+        string instituicaoForm = Console.ReadLine();
+
+        Console.WriteLine("Digite a carga horária total da formação: ");
+        int cargaHorariaForm = int.Parse(Console.ReadLine());
+
+        Formacao formacao = new Formacao(tipoForm, dataFimForm, nomeForm, duracaoForm, areaForm, instituicaoForm, cargaHorariaForm);
 
         Professor professor1 = new Professor(turnoProf, cargaHoraria, salarioprof, statusProf, disciplinaProf);
 
@@ -166,6 +213,11 @@ if (clas != 0)
         Console.WriteLine("0 - Sair do programa");
         Console.WriteLine("1 - Informações disponíveis do professor");
         Console.WriteLine("2 - Confirmar status de atividade");
+        Console.WriteLine("3 - Informações disponíveis da formação");
+        Console.WriteLine("4 - Verificar sua aprovação");
+        Console.WriteLine("5 - Confirmar a área de estudo da formação");
+        Console.WriteLine("6 - Atualizar o nome da formação");
+        Console.WriteLine("7 - Descobrir quantos anos restam para você completa-lá");
         int op = int.Parse(Console.ReadLine());
 
         switch(op) 
@@ -179,6 +231,26 @@ if (clas != 0)
 
             case 2:
             professor1.VerificarStatus();
+            break;
+
+            case 3: 
+            formacao.ExibirInfo();
+            break;
+
+            case 4:
+            formacao.VerificarAprovacao();
+            break;
+
+            case 5:
+            formacao.AreaDeEstudo();
+            break;
+
+            case 6:
+            formacao.AtualizarNomeFormacao();
+            break;
+
+            case 7:
+            formacao.ObterAnosRestantes();
             break;
 
         }
@@ -250,22 +322,22 @@ if (clas != 0)
     if(clas == 5)
     {
         
-        Console.WriteLine("Digite o nome da turma: ");
+        Console.WriteLine("\nDigite o nome da turma: ");
         string nomeTurma = Console.ReadLine();
 
-        Console.WriteLine("Digite a quantidade de alunos da turma: ");
+        Console.WriteLine("\nDigite a quantidade de alunos da turma: ");
         int quantAlunos = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Digite o número da sala da turma: ");
+        Console.WriteLine("\nDigite o número da sala da turma: ");
         int sala = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Digite a quantidade de professores da turma: ");
+        Console.WriteLine("\nDigite a quantidade de professores da turma: ");
         int quantProfs = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Digite o nome do orientados da turma: ");
+        Console.WriteLine("\nDigite o nome do orientados da turma: ");
         string nomeOrient = Console.ReadLine();
 
-        Console.WriteLine("Digite o período da turma: ");
+        Console.WriteLine("\nDigite o período da turma: ");
         int periodoTurms = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Digite a quantidade de horas extras da turma: ");
@@ -313,7 +385,7 @@ if (clas != 0)
     if(clas == 6)
     {
         Alunos aluno = new Alunos();
-        Console.WriteLine("Digite o nome do Aluno: ");
+        Console.WriteLine("\nDigite o nome do Aluno: ");
         aluno.Nome = Console.ReadLine();
 
         Console.WriteLine("\nDigite o Sexo do Aluno: ");
@@ -358,17 +430,76 @@ if (clas != 0)
             aluno.EmailSecundario();
         }
 
-        Console.WriteLine("A idade do Aluno é: ");
+        Console.WriteLine("\nA idade do Aluno é: ");
         aluno.CalcularIdade();
 
-        Console.WriteLine("Digite as 4 notas do aluno em sequência primeira, segunda...");
+        Console.WriteLine("\nDigite o nome da turma: ");
+        string nomeTurma = Console.ReadLine();
+
+        Console.WriteLine("\nDigite a quantidade de alunos da turma: ");
+        int quantAlunos = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("\nDigite o número da sala da turma: ");
+        int sala = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("\nDigite a quantidade de professores da turma: ");
+        int quantProfs = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("\nDigite o nome do orientados da turma: ");
+        string nomeOrient = Console.ReadLine();
+
+        Console.WriteLine("\nDigite o período da turma: ");
+        int periodoTurms = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("\nDigite a quantidade de horas extras da turma: ");
+        int horasExtrasTurma = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("\nDigite as 4 notas do aluno em sequência primeira, segunda...");
         double nota1 = double.Parse(Console.ReadLine());
         double nota2 = double.Parse(Console.ReadLine());
         double nota3 = double.Parse(Console.ReadLine());
         double nota4 = double.Parse(Console.ReadLine());
         aluno.CalcularNotaFinal(nota1, nota2, nota3, nota4);
         aluno.Aprovacao();
-        aluno.ExibirInformacoesAluno();
+
+        Turma turmaA = new Turma(nomeTurma, quantAlunos, sala, quantProfs, nomeOrient, periodoTurms, horasExtrasTurma);
+
+        Console.WriteLine("\nDigite o número de qual informação você deseja acessar: ");
+        Console.WriteLine("0 - Sair do programa");
+        Console.WriteLine("1 - Informações disponíveis do aluno");
+        Console.WriteLine("2 - Alterar a sala da turma");
+        Console.WriteLine("3 - Verificar se a sala da turma está vazia");
+        Console.WriteLine("4 - Realizar o calculo de horas extrasrestantes necessárias");
+        Console.WriteLine("5 - Atualizar o período em que a turma se encontra");
+        int op = int.Parse(Console.ReadLine());
+
+        switch(op) 
+        {
+            case 0:
+            break;
+
+            case 1: 
+            aluno.ExibirInformacoesAluno();
+            break;
+
+            case 2:
+            turmaA.AlterarSala();
+            break;
+
+            case 3:
+            turmaA.SalaVazia();
+            break;
+
+            case 4:
+            turmaA.CalcularHorasExtrasFaltando();
+            break;
+
+            case 5:
+            turmaA.AtualizarPeriodoTurma();
+            break;
+
+        }
+        //aluno.ExibirInformacoesAluno();
 
     }
 
