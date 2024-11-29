@@ -67,7 +67,6 @@ public class Funcionario : Pessoa
         Console.WriteLine($"Supervisor: {Supervisor}");
         Console.WriteLine($"Email Secundário: {EmailSecun}");
         Console.WriteLine($"Telefone Secundário: {TelefoneSecun}");
-        Console.WriteLine("\n--- Informações da Formação ---"); 
-        formacao.ExibirInfo();
+        Formacao = formacao;
     }
 }

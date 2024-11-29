@@ -71,8 +71,7 @@ public class Alunos : Pessoa{
         Console.WriteLine($"Responsavel: {Responsavel}");
         Console.WriteLine($"Email Secundario: {EmailSecun}");
         Console.WriteLine($"Telefone Secundario: {TelefoneSecun}");
-        Console.WriteLine("\n--- Informações da Turma ---"); 
-        turma.ExibirInfo();
+        Turma = turma;
         
     }
 }

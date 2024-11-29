@@ -480,6 +480,7 @@ if (clas != 0)
 
             case 1: 
             aluno.ExibirInformacoesAluno();
+            turmaA.ExibirInfo();
             break;
 
             case 2:

@@ -86,8 +86,7 @@ public void ExibirInfo()
     Console.WriteLine($"Média de carga horária: {CargaHoraria}");
     Console.WriteLine($"Salário: {Salario}");
     Console.WriteLine($"Disciplina: {Disciplina}");
-    Console.WriteLine("\n--- Informações da Formação ---"); 
-    formacao.ExibirInfo();
+    Formacao = formacao;
  
 }
 
